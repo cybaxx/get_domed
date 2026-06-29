@@ -1,4 +1,6 @@
 <script>
+import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import DomePreview from '$lib/DomePreview.svelte';
 import SpecTable from '$lib/SpecTable.svelte';
 import StrutBreakdown from '$lib/StrutBreakdown.svelte';
@@ -61,7 +63,13 @@ const emtCompare = [
 <h1>4V Geodesic Dome</h1>
 <p class="tag">Six strut types. 250 struts total. Heavy-duty dome for exposed areas and year-round use.</p>
 
-<DomePreview modelUrl="/models/4v/dome_4v.json" />
+{#if browser}
+<DomePreview modelUrl="{base}/models/4v/dome_4v.json" />
+{:else}
+<div class="preview-container" style="display:flex;align-items:center;justify-content:center;background:#0f172a;border-radius:var(--radius);height:500px;margin-bottom:1.5rem;">
+  <span style="color:#94a3b8;font-family:var(--font);">3D preview loading...</span>
+</div>
+{/if}
 
 <h2>Dimensions</h2>
 <SpecTable rows={dimRows} />

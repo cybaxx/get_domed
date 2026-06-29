@@ -5,6 +5,11 @@ export default {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter({ fallback: '404.html' }),
-    paths: { base: '' }
+    paths: { base: '/get_domed' },
+    prerender: {
+      handleHttpError: 'warn',
+      crawl: true,
+      origin: 'https://cybaxx.github.io',
+    }
   }
 };

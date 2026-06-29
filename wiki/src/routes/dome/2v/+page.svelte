@@ -1,4 +1,6 @@
 <script>
+import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import DomePreview from '$lib/DomePreview.svelte';
 import SpecTable from '$lib/SpecTable.svelte';
 import StrutBreakdown from '$lib/StrutBreakdown.svelte';
@@ -71,7 +73,13 @@ let title = $state('2V Dome — Geodesic Dome Wiki');
 <h1>2V Geodesic Dome</h1>
 <p class="tag">The simplest geodesic dome. Two strut types. 65 struts total. Best for budget camping in low-wind conditions.</p>
 
-<DomePreview modelUrl="/models/2v/dome_2v.json" />
+{#if browser}
+<DomePreview modelUrl="{base}/models/2v/dome_2v.json" />
+{:else}
+<div class="preview-container" style="display:flex;align-items:center;justify-content:center;background:#0f172a;border-radius:var(--radius);height:500px;margin-bottom:1.5rem;">
+  <span style="color:#94a3b8;font-family:var(--font);">3D preview loading...</span>
+</div>
+{/if}
 
 <h2>Dimensions</h2>
 <SpecTable rows={dimRows} />
