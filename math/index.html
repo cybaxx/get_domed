@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>" />
+    <title>%sveltekit.title%</title>
+    <link href="../_app/immutable/entry/start.CRrUDU7H.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CwZAd8kM.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BI5R7yik.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DG8AwM8X.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/B59Xx-DI.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.CxGYUFUu.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C33pJ2SD.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DuFOVjlv.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BnoMRREb.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/OF4Ch4Yz.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.ClzSKMkF.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BIdf22mg.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/B5qEl8Oo.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/8.Zu8lGBSB.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/D_zgtrG4.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DpWZWSin.js" rel="modulepreload">
+		<!--1vi0gcb--><!----><title>Geodesic Math — Geodesic Dome Wiki</title>
+		<link href="../_app/immutable/assets/0.Osrl-ECB.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--[--><!--[0--><!--[--><div class="layout"><nav class="sidebar"><a href="/" class="brand">Geodesic Domes</a> <p class="tag" style="padding:0 0.75rem;margin-bottom:1rem;">Berkeley Math Circle · 30 ft</p> <button class="theme-toggle">🌙 Dark</button> <!--[--><h2>Overview</h2> <!--[--><a href="/">Home</a><a href="/dome/2v">2V Dome</a><a href="/dome/3v">3V Dome</a><a href="/dome/4v">4V Dome</a><!--]--><h2>Reference</h2> <!--[--><a href="/math">Geodesic Math</a><a href="/build">Construction Guide</a><a href="/downloads">Downloads</a><!--]--><!--]--></nav> <main class="content"><!--[--><h1>Geodesic Dome Mathematics</h1> <p class="tag">Based on <em>"Geodesic Domes"</em> by Tom Davis, Berkeley Math Circle, September 2004.</p> <h2>The Icosahedron</h2> <div class="card"><p>A geodesic dome starts with a regular icosahedron — 20 equilateral triangular faces, 12 vertices, 30 edges. At each vertex, 5 triangles meet.</p> <p>The 12 vertices use the golden ratio φ = (1+√5)/2 ≈ 1.618:</p> <p class="mono" style="background:var(--bg);padding:0.75rem;border-radius:4px;font-size:0.85rem;">(±1, ±φ, 0) cyclically permuted → (0, ±1, ±φ) → (±φ, 0, ±1)</p> <p>All vertices lie on a sphere of radius √(1+φ²) ≈ 1.902. Normalized to unit sphere for subdivision.</p></div> <h2>Subdivision &amp; Projection</h2> <div class="card"><p>Each of the 20 triangular faces is subdivided into <strong>f²</strong> smaller triangles using a barycentric lattice:</p> <ul style="margin-left:1.5rem;margin-top:0.5rem;"><li>Each edge is divided into <strong>f</strong> equal segments</li> <li>Smaller triangles fill the face in a regular grid</li> <li>All new vertices are <strong>projected outward</strong> to the sphere surface (normalized)</li></ul> <p>This produces a spherical polyhedron approximating a sphere. The frequency <strong>f</strong> (2, 3, 4...) determines the dome's complexity.</p></div> <h2>Strut Counts</h2> <div class="card"><h3>Full Sphere</h3> <p>For a Class I icosahedron sphere at frequency f:</p> <table><thead><tr><th>Vertices</th><td class="mono">V = 10f² + 2</td></tr></thead><tbody><tr><th>Edges (struts)</th><td class="mono">E = 30f²</td></tr><tr><th>Faces</th><td class="mono">F = 20f²</td></tr></tbody></table> <h3>Even-V Dome (Hemisphere)</h3> <p class="mono">E_dome = 30f²/2 + 5f/2</p> <p>Examples: 2V = 65 struts, 4V = 250 struts. Flat equator — dome sits perfectly on level ground.</p> <h3>Odd-V Dome (Smaller)</h3> <p class="mono">E_dome = (30f² − 10f)/2</p> <p>Examples: 3V = 120 struts. No natural equator — base is slightly non-planar.</p></div> <h2>Chord Factors</h2> <div class="card"><p>Strut lengths are proportional to the dome radius: <strong>length = chord_factor × radius</strong>.</p> <p>For a 30 ft diameter dome (radius 15 ft):</p> <table><thead><tr><th>Type</th><th>2V Chord</th><th>Type</th><th>3V Chord</th><th>Type</th><th>4V Chord</th></tr></thead><tbody><tr><td>A</td><td class="mono">0.5465</td><td>A</td><td class="mono">0.3486</td><td>A</td><td class="mono">0.2532</td></tr><tr><td>B</td><td class="mono">0.6180</td><td>B</td><td class="mono">0.4035</td><td>B</td><td class="mono">0.2945</td></tr><tr><td></td><td></td><td>C</td><td class="mono">0.4124</td><td>C</td><td class="mono">0.2952</td></tr><tr><td></td><td></td><td></td><td></td><td>D</td><td class="mono">0.2986</td></tr><tr><td></td><td></td><td></td><td></td><td>E</td><td class="mono">0.3129</td></tr><tr><td></td><td></td><td></td><td></td><td>F</td><td class="mono">0.3249</td></tr></tbody></table></div> <h2>Number of Strut Types</h2> <div class="card"><p>The number of distinct strut lengths for each frequency (open problem from the paper):</p> <table><thead><tr><th>f</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr></thead><tbody><tr><th>Types</th><td>1</td><td>2</td><td>3</td><td>6</td><td>9</td><td>9</td><td>16</td><td>20</td><td>18</td><td>30</td></tr></tbody></table> <p class="tag">This sequence has been submitted to the Online Encyclopedia of Integer Sequences (OEIS).</p></div><!--]--><!----></main></div><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1dqhegi = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						assets: "/get_domed"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CRrUDU7H.js"),
+						import("../_app/immutable/entry/app.CxGYUFUu.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+  </body>
+</html>
