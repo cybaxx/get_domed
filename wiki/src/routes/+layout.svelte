@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
   import '../app.css';
   let { children } = $props();
   let dark = $state(false);
@@ -21,22 +22,22 @@
 
   const nav = [
     { label: 'Overview', links: [
-      { href: '/', text: 'Home' },
-      { href: '/dome/2v', text: '2V Dome' },
-      { href: '/dome/3v', text: '3V Dome' },
-      { href: '/dome/4v', text: '4V Dome' },
+      { href: base + '/', text: 'Home' },
+      { href: base + '/dome/2v', text: '2V Dome' },
+      { href: base + '/dome/3v', text: '3V Dome' },
+      { href: base + '/dome/4v', text: '4V Dome' },
     ]},
     { label: 'Reference', links: [
-      { href: '/math', text: 'Geodesic Math' },
-      { href: '/build', text: 'Construction Guide' },
-      { href: '/downloads', text: 'Downloads' },
+      { href: base + '/math', text: 'Geodesic Math' },
+      { href: base + '/build', text: 'Construction Guide' },
+      { href: base + '/downloads', text: 'Downloads' },
     ]},
   ];
 </script>
 
 <div class="layout">
   <nav class="sidebar">
-    <a href="/" class="brand">Geodesic Domes</a>
+    <a href={base + '/'} class="brand">Geodesic Domes</a>
     <p class="tag" style="padding:0 0.75rem;margin-bottom:1rem;">Berkeley Math Circle · 30 ft</p>
     <button class="theme-toggle" onclick={toggleTheme}>
       {dark ? '☀️ Light' : '🌙 Dark'}

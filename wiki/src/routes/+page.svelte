@@ -1,4 +1,5 @@
 <script>
+import { base } from '$app/paths';
 import SpecTable from '$lib/SpecTable.svelte';
 
 const compRows = [
@@ -27,19 +28,19 @@ const compRows = [
 
 <h2>Choose Your Dome</h2>
 <div class="hero-grid">
-  <a href="/dome/2v" class="hero-card">
+  <a href="{base}/dome/2v" class="hero-card">
     <h3 style="color:#ef4444;">2V Dome</h3>
     <div class="stat">65 struts · 2 types · 26 hubs</div>
     <div class="desc">Easiest to build. Budget camping dome for low-wind areas. Only two strut lengths to manage.</div>
     <span class="cta">View 2V →</span>
   </a>
-  <a href="/dome/3v" class="hero-card">
+  <a href="{base}/dome/3v" class="hero-card">
     <h3 style="color:#22c55e;">3V Dome</h3>
     <div class="stat">120 struts · 3 types · 46 hubs</div>
     <div class="desc">Good balance of strength and complexity. Semi-permanent use in moderate wind zones.</div>
     <span class="cta">View 3V →</span>
   </a>
-  <a href="/dome/4v" class="hero-card">
+  <a href="{base}/dome/4v" class="hero-card">
     <h3 style="color:#3b82f6;">4V Dome</h3>
     <div class="stat">250 struts · 6 types · 91 hubs</div>
     <div class="desc">Most rigid structure. For exposed areas and year-round use. Handles strong winds.</div>
@@ -52,15 +53,15 @@ const compRows = [
 
 <h2>Resources</h2>
 <div class="quick-links">
-  <a href="/math" class="quick-link">
+  <a href="{base}/math" class="quick-link">
     <span class="ql-icon">📐</span>
     <span class="ql-text"><h4>Geodesic Math</h4><p>Icosahedron subdivision, chord factors, strut formulas</p></span>
   </a>
-  <a href="/build" class="quick-link">
+  <a href="{base}/build" class="quick-link">
     <span class="ql-icon">🔨</span>
     <span class="ql-text"><h4>Construction Guide</h4><p>Tools, materials, step-by-step assembly, safety tips</p></span>
   </a>
-  <a href="/downloads" class="quick-link">
+  <a href="{base}/downloads" class="quick-link">
     <span class="ql-icon">📦</span>
     <span class="ql-text"><h4>All Downloads</h4><p>STL, OBJ, DXF files for Fusion 360, 3D printing, laser cutting</p></span>
   </a>
