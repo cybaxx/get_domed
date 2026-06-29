@@ -4,6 +4,7 @@
   import '../app.css';
   let { children } = $props();
   let dark = $state(false);
+  let menuOpen = $state(false);
 
   onMount(() => {
     dark = localStorage.getItem('theme') === 'dark';
@@ -20,6 +21,8 @@
     document.documentElement.setAttribute('data-theme', dark ? 'dark' : '');
   }
 
+  function closeMenu() { menuOpen = false; }
+
   const nav = [
     { label: 'Overview', links: [
       { href: base + '/', text: 'Home' },
@@ -35,8 +38,16 @@
   ];
 </script>
 
+<button class="menu-toggle" onclick={() => menuOpen = !menuOpen}>
+  {menuOpen ? '✕' : '☰'}
+</button>
+
+{#if menuOpen}
+  <div class="sidebar-overlay visible" onclick={closeMenu}></div>
+{/if}
+
 <div class="layout">
-  <nav class="sidebar">
+  <nav class="sidebar" class:open={menuOpen}>
     <a href={base + '/'} class="brand">Geodesic Domes</a>
     <p class="tag" style="padding:0 0.75rem;margin-bottom:1rem;">Berkeley Math Circle · 30 ft</p>
     <button class="theme-toggle" onclick={toggleTheme}>
@@ -45,7 +56,7 @@
     {#each nav as section}
       <h2>{section.label}</h2>
       {#each section.links as link}
-        <a href={link.href}>{link.text}</a>
+        <a href={link.href} onclick={closeMenu}>{link.text}</a>
       {/each}
     {/each}
   </nav>
