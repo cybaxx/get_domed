@@ -1,0 +1,80 @@
+Specification,2V (30 ft),3V (30 ft),4V (30 ft)
+,,
+DOME DIMENSIONS,,,
+Diameter (ft),30.00,30.00,30.00
+Radius (ft),15.00,15.00,15.00
+Height (ft),15.00,15.00,15.00
+Base Circumference (ft),94.25,94.25,94.25
+Floor Area (sq ft),706.86,706.86,706.86
+Surface Area Cap (sq ft),1413.72,1413.72,1413.72
+Volume (cu ft),7068.59,7068.59,7068.59
+,,
+STRUCTURAL,,,
+Total Struts,480,720,960
+Number of Strut Types,2,3,4
+Total Linear Feet (Pipe),2160,3240,4340
+Nodes/Hubs Required,60,100,120–180
+Assembly Complexity,Low,Medium,High
+Wind Resistance,20–40 mph,40–60 mph,60–100 mph
+,,
+MATERIAL QUANTITIES,,,
+1.5" PVC Pipe Sticks (10 ft each),216,324,434
+Plywood Sheets (1/2" birch 4×8),12,18,24–30
+Bolt Sets (1/2" + washers + nuts),1200,1800,2000–2500
+Heavy-Duty Tarps (sq ft),1500–1800,1500–1800,1500–1800
+Rebar Anchors (3/8" × 3 ft),20–30,20–30,20–30
+Guy-Line Rope (linear ft),500–750,500–750,500–750
+Sandbags (empty),40–60,40–60,40–60
+PVC Primer & Cement (cans),2,2–3,3
+,,
+MATERIAL COSTS (HOME DEPOT 2026),,,
+PVC Pipe ($8.49 / stick),1833.84,2750.76,3684.66
+Plywood Hubs ($65.00 / sheet),780.00,1170.00,1560.00–1950.00
+Bolts & Fasteners ($0.50–0.75 ea),600–900,900–1350,1000–1875
+Heavy-Duty Tarps ($0.75–1.00 / sq ft),1125–1800,1125–1800,1125–1800
+Rebar & Anchoring ($90–110 total),90–110,90–110,90–110
+Guy-Line Rope ($1.10–1.60 / ft),550–1200,550–1200,550–1200
+Sandbags ($18 per 50-ct case),18–36,18–36,18–36
+PVC Primer & Cement ($10.98 / can),21.96,21.96–32.94,32.94
+Consumables (tape/blades/ppe/safety),150–250,150–250,150–250
+,,
+ALTERNATIVE MATERIAL: EMT CONDUIT (2026),,,
+,,
+1" EMT Conduit ($19.98 / stick),4315.68,6473.52,8671.32
+2" EMT Conduit ($42.98 / stick),9283.68,13925.52,18653.32
+Total Weight — 1" EMT (lbs),2160,3240,4340
+Total Weight — 2" EMT (lbs),4644,6966,9331
+Est. Wind Rating — 1" EMT,50–100 mph,60–120 mph,80–140 mph
+Est. Wind Rating — 2" EMT,80–130 mph,100–150 mph,120+ mph
+Est. Lifespan — EMT (maintained),15–20 years,20–25 years,25+ years
+,,
+EMT Notes: PVC cement not needed; use bolted connections at all hubs,,
+Heavier-duty plywood hubs and deeper footings recommended,,
+Tools: angle grinder or metal saw replaces PVC cutter,,
+,,
+SUBTOTAL MATERIALS — PVC (low–high),5169–6932,6776–8700,8211–10939
+Sales Tax (8–10%),414–693,542–870,657–1094
+,,
+TOOL COSTS (If Not Owned),,,
+Rent: Drill + Circular Saw (3 days),80–120,80–120,80–120
+Rent: Reciprocating Saw (3 days),40–60,40–60,40–60
+Buy: Bits/Blades/Tape Measure/Wrenches,60–80,60–80,60–80
+,,
+CONTINGENCY (10% of materials),517–693,678–870,821–1094
+,,
+TOTAL HOME DEPOT BUILD COST (low–high),6279–8578,8175–10700,9869–13386
+,,
+ASSEMBLY & LABOR,,,
+Typical Assembly Time,40–60 hours,60–80 hours,80–120 hours
+Number of Builders Recommended,2–3,3–4,4–6
+DIY Labor Cost (Save vs hiring),1000–2500,2000–3500,3000–5000
+,,
+PERFORMANCE & USE CASE,,,
+Best For,Budget camping / low wind,Moderate wind zones,Exposed areas / 100 mph winds
+Occupancy (Comfortable),4–6 people,6–8 people,8–12 people
+Occupancy (Max Sleeping),15–20 people,20–25 people,25–30 people
+Lifespan (if maintained),2–3 years,3–5 years,5+ years
+Durability,Fair,Good,Excellent
+Ease of Assembly,Easiest,Moderate,Hardest
+Portability (ease of moving),Easiest,Moderate,Hardest
+Repair Complexity,Simple,Moderate,Complex
